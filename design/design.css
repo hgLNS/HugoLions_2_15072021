@@ -185,7 +185,7 @@ article {
 #cards {
     display: flex;
     justify-content:space-around;
-
+    flex-wrap: wrap;
 }
 
 .card1 {
