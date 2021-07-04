@@ -1,0 +1,199 @@
+html, body{
+    padding:0;
+    margin:0;
+    font-family:"Raleway";
+}
+
+header {
+    display:flex;
+    width:100%;
+    align-content: stretch;
+    flex-flow: wrap;
+}
+
+nav {
+    display:flex;
+    order:2;
+}
+
+header a {
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    padding: 0 15px;
+    color:#333333;
+}
+
+header a:hover {
+    color:#74a4fd;
+}
+
+.logo {
+    flex-grow:1;
+    padding: 10px 0 0 30px;
+}
+
+.menu1:hover {
+    border-top:3px #0065FC solid;
+}
+
+.menu2:hover {
+    border-top:3px #0065FC solid;
+}
+
+.menu3:hover {
+    background:#0065FC;
+    color:#fff;
+    transition-duration: 1s;
+}
+
+.login {
+    display:flex;
+    order:3;
+    align-content: center;
+}
+
+.login a {
+    color:#0065FC;
+}
+
+#recherche {
+    margin:50px 0 0 30px;
+}
+
+#recherche h1{
+    font-size:1.3em;
+}
+
+#recherche h5 {
+    font-weight:normal;
+    margin-top:-10px;
+}
+
+#formulaire {
+    display:flex;
+    width:300px;
+}
+
+#formulaire label{
+    background:#F2F2F2;
+    width:30px;
+    border-radius:10px 0 0 10px;
+}
+
+#formulaire label img{
+    padding:10px;
+}
+
+#formulaire button {
+    background:#0065FC;
+    color:#fff;
+    font-weight:bold;
+    border:none;
+    border-radius:0 10px 10px 0;
+    font-size:0.8em;
+    padding:10px;
+}
+
+#formulaire input {
+    border:1px solid #F2F2F2;
+    color:#000;
+    font-weight:bold;
+}
+
+#formulaire button:hover {
+    box-shadow: inset rgb(21, 17, 255) 0px 0px 5px;
+    transition-duration: 0.2s;
+}
+
+#filtres {
+    display:flex;
+    color:#000;
+    font-weight:bold;
+    margin-top:40px;
+}
+
+#filtres img {
+    width:15px;
+    filter: invert(24%) sepia(80%) saturate(3258%) hue-rotate(209deg) brightness(98%) contrast(105%);
+}
+
+.filtre1, .filtre2, .filtre3, .filtre4 {
+    display:flex;
+    border-radius:40px;
+    padding:0px 30px; 
+}
+
+.info {
+    display:flex;
+    color:#333;
+    font-size:0.7em;
+}
+
+.info img {
+    border:1px solid;
+    border-radius:50%;
+    width:8px;
+    height:8px;
+    padding:3px;
+    margin-right:8px;
+    filter: invert(24%) sepia(80%) saturate(3258%) hue-rotate(209deg) brightness(98%) contrast(105%);
+}
+
+article {
+    display:flex;
+    margin:50px 0;
+}
+
+#allResults {
+    border-radius:30px;
+    width:60%;
+    height:600px;
+    background:#F2F2F2;
+    margin:0px 30px;
+}
+
+#mostPopular {
+    border-radius:30px;
+    width:30%;
+    height:600px;
+    background:#F2F2F2;
+    margin:0px 50px;
+}
+
+#allResults p {
+    padding:10px 30px;
+    font-weight:bold;
+}
+
+.card1 {
+    display:flex;
+    flex-direction: ;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:#caca 0 0 10px;
+    width:300px;
+    height:250px;
+    margin:30px 40px;
+    justify-content: center;
+
+}
+
+#allResults img{
+    display:flex;
+    border-radius:20px 20px 0 0;
+    width:96%;
+    height:60%;
+    padding:5px;
+}
+
+
+
+@font-face {
+    font-family:"Raleway";
+    src:url(./Raleway.ttf);
+}
+
+@media screen {
+    
+}
