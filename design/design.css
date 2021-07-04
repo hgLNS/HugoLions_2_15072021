@@ -126,8 +126,8 @@ header a:hover {
     padding-right:15px;
     background:#dbe7fd ;
     border-radius:50%;
-    width:50px;
-    height:50px;
+    width:40px;
+    height:40px;
 }
 
 .filtre1, .filtre2, .filtre3, .filtre4 {
@@ -142,7 +142,7 @@ header a:hover {
     display:flex;
     color:#333;
     font-size:0.7em;
-    margin-top:20px;
+    margin-top:30px;
 }
 
 .info img {
@@ -182,15 +182,19 @@ article {
     font-size:1.3em;
 }
 
+#cards {
+    display: flex;
+    justify-content:space-around;
+
+}
+
 .card1 {
     display:flex;
-    flex-direction: ;
     background:#fff;
     border-radius:20px;
     box-shadow:#caca 0 0 10px;
     width:300px;
     height:250px;
-    margin:30px 40px;
     justify-content: center;
 
 }
