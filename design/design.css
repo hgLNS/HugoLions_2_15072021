@@ -163,26 +163,56 @@ article {
 #allResults {
     border-radius:30px;
     width:60%;
-    height:600px;
+    height:800px;
     background:#F2F2F2;
     margin:0px 30px;
 }
 
-#mostPopular {
-    border-radius:30px;
-    width:30%;
-    height:600px;
-    background:#F2F2F2;
-    margin:0px 50px;
-}
-
 #allResults .title {
+    display:flex;
     padding:10px 30px;
     font-weight:bold;
     font-size:1.3em;
 }
 
-#cards {
+#allResults .bottom {
+    padding-left: 30px;
+    font-weight:bold;
+    font-size:1em;
+}
+
+#mostPopular {
+    border-radius:30px;
+    width:30%;
+    height:800px;
+    background:#F2F2F2;
+    margin:0px 50px;
+    flex:1;
+}
+
+#mostPopular .title {
+    display:flex;
+    align-items: center;
+    padding:10px 0;
+    font-weight:bold;
+    font-size:1.3em;
+    width:100%;
+}
+
+#mostPopular .title img {
+    display:flex;
+    width:30px;
+    order:2;
+    padding:0 20px;
+}
+
+#mostPopular .title p {
+    flex-grow:1;
+    order:1;
+    padding:0 30px;
+}
+
+#cards1 {
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
@@ -196,10 +226,10 @@ article {
     width:300px;
     height:250px;
     justify-content: center;
-
+    margin:0 0 70px 0;
 }
 
-#allResults img{
+#cards1 img {
     display:flex;
     border-radius:20px 20px 0 0;
     width:96%;
@@ -207,7 +237,58 @@ article {
     padding:5px;
 }
 
+#cards2 {
+    display: flex;
+    align-content: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 
+.card2 {
+    display:flex;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:#caca 0 0 10px;
+    width:350px;
+    height:175px;
+    justify-content: center;
+    margin-bottom:70px;
+    background-size:cover;
+}
+
+#cards2 img {
+    display:flex;
+    border-radius:20px 0 0 20px;
+    width:33%;
+    height:96%;
+    padding:5px;
+}
+
+footer {
+    display:flex;
+    width:100%;
+    height:200px;
+    background:#F2F2F2;
+    margin-bottom:0px;
+    font-size:0.9em;
+}
+
+#footer {
+    display:flex;
+    justify-content: space-between;
+    width:80%;
+    margin:auto 80px;
+}
+
+#footer p {
+    line-height:150%;
+}
+
+.titreFooter {
+    font-weight:bold;
+    line-height:300%;
+}
 
 @font-face {
     font-family:"Raleway";
