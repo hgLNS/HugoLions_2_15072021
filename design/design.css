@@ -178,7 +178,6 @@ article {
 }
 
 #allResults .title {
-    display:flex;
     padding:10px 30px;
     font-weight:bold;
     font-size:1.3em;
@@ -223,8 +222,9 @@ article {
 
 #cards1 {
     display: flex;
-    justify-content:space-around;
     flex-wrap: wrap;
+    margin:0 40px;
+    flex:50 50 width;
 }
 
 .card1 {
@@ -233,7 +233,8 @@ article {
     border-radius:20px;
     box-shadow:#caca 0 0 10px;
     justify-content: center;
-    margin:0 0 70px 0;
+    margin:0 20px 70px 20px;
+    width:45%;
 }
 
 #cards1 img {
@@ -242,6 +243,8 @@ article {
     width:96%;
     height:60%;
     padding:5px;
+    object-fit: cover;
+    object-position: top;
 }
 
 #cards2 {
@@ -258,17 +261,32 @@ article {
     border-radius:20px;
     box-shadow:#caca 0 0 10px;
     justify-content: center;
-    margin-bottom:70px;
+    margin:30px 40px;
     background-size:cover;
+    height:45%;
 }
 
 #cards2 img {
     display:flex;
-    justify-content:flex-start;
     border-radius:20px 0 0 20px;
     width:33%;
     height:96%;
     padding:5px;
+    margin-left:0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card3 {
+    display:flex;
+    border-radius: 20px;
+    margin: 0 0 50px 30px;
+}
+
+.card3 img {
+    display:flex;
+    border-radius: 20px;
+    background:cover;
 }
 
 footer {
