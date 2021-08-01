@@ -4,6 +4,8 @@ html, body{
     font-family:"Raleway";
 }
 
+@media (min-width: 1200px) {
+
 header {
     display:flex;
     width:100%;
@@ -235,13 +237,19 @@ article {
     box-shadow:#caca 0 0 10px;
     margin:0 20px 20px 20px;
     width:28%;
-    height:45%;
+    height:46%;
 }
 
 .card1 p {
     display: flex;
     flex-direction: column;
     padding-left:20px;
+    font-size:1.2em;
+}
+
+.card1 table {
+    margin:-55px 0 0 5px;
+    filter: invert(24%) sepia(80%) saturate(3258%) hue-rotate(209deg) brightness(98%) contrast(105%);
 }
 
 #cards1 img {
@@ -272,6 +280,7 @@ article {
     flex-direction: column;
     padding-left:20px;
     flex:2;
+    font-size:1.2em;
 }
 
 .card2 {
@@ -281,8 +290,8 @@ article {
     box-shadow:#caca 0 0 10px;
     justify-content: center;
     margin-bottom:50px;
-    width:80%;
-    height:40%;
+    width:85%;
+    height:26%;
 }
 
 #cards2 img {
@@ -299,15 +308,19 @@ article {
     display:flex;
     flex-wrap: nowrap;
     width:100%;
-    height:600px;
+    height:700px;
 }
 
 .activitesColonne1 .card3 {
-    height: max-content;
+    height:500px;
+}
+
+.activitesColonne2 {
+    height:500px;
 }
 
 .activitesColonne2 .card3 {
-    flex-grow:70 30 height;
+
 }
 
 .activitesColonne3 .card3 {
@@ -319,7 +332,7 @@ article {
     justify-content:center;
     box-shadow:#caca 0 0 10px;
     border-radius: 20px;
-    margin: 0 30px 50px 30px;
+    margin: 0 30px 30px 30px;
     padding-bottom: 30px;
 }
 
@@ -329,7 +342,6 @@ article {
     padding-bottom: 10px;
     object-fit: cover;
     width:100%;
-    max-height:600px; 
 }
 
 footer {
@@ -357,11 +369,389 @@ footer {
     line-height:300%;
 }
 
+}
+
 @font-face {
     font-family:"Raleway";
     src:url(./Raleway.ttf);
 }
 
-@media screen {
+@media (min-width: 320px ) and (max-width: 768px)  {
+
+    header {
+        display:flex;
+        width:100%;
+        align-content: stretch;
+        flex-flow: wrap;
+    }
     
+    nav {
+        display:flex;
+        margin:auto;        
+        order:3;
+        width:100%;
+    }
+    
+    header a {
+        display:flex;
+        align-items:center;
+        text-decoration:none;
+        padding: 0 15px;
+        color:#333333;
+    }
+    
+    header a:hover {
+        color:#74a4fd;
+    }
+    
+    .logo {
+        flex-grow:1;
+        padding: 10px 0 0 10px;
+    }
+    
+    .menu1:hover {
+        border-bottom:3px #0065FC solid;
+    }
+    
+    .menu2:hover {
+        border-bottom:3px #0065FC solid;
+    }
+    
+    .menu3:hover {
+        background:#0065FC;
+        color:#fff;
+        transition-duration: 1s;
+    }
+    
+    .login {
+        display:flex;
+        order:2;
+        align-content: center;
+    }
+    
+    .login a {
+        color:#0065FC;
+    }
+    
+    #recherche {
+        margin:50px 0 0 10px;
+    }
+    
+    #recherche h1{
+        font-size:1.3em;
+    }
+    
+    #recherche h5 {
+        font-weight:normal;
+        margin-top:-10px;
+    }
+    
+    #formulaire {
+        display:flex;
+        width:300px;
+    }
+    
+    #formulaire label{
+        background:#F2F2F2;
+        width:30px;
+        border-radius:10px 0 0 10px;
+    }
+    
+    #formulaire label img{
+        padding:10px;
+    }
+    
+    #formulaire button {
+        background:#0065FC;
+        color:#fff;
+        font-weight:bold;
+        border:none;
+        border-radius:0 10px 10px 0;
+        font-size:0.8em;
+        padding:10px;
+    }
+    
+    #formulaire input {
+        border:1px solid #F2F2F2;
+        color:#000;
+        font-weight:bold;
+    }
+    
+    #formulaire button:hover {
+        box-shadow: inset rgb(21, 17, 255) 0px 0px 5px;
+        transition-duration: 0.2s;
+    }
+    
+    #filtres {
+        display:flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        width:50%;
+        color:#000;
+        font-weight:bold;
+        margin-top:40px;
+        padding-right:50px;
+        font-size:0.9em;
+    }
+    
+    #filtres p {
+        margin-right:15px;
+    }
+    
+    #filtres img{
+        width:20px;
+        height:20px;
+        margin:auto;
+        filter: invert(24%) sepia(80%) saturate(3258%) hue-rotate(209deg) brightness(98%) contrast(105%);
+
+    }
+    
+    .imgFiltre {
+        display:flex;
+        justify-content:center;
+        align-content:center;
+        background:#dbe7fd;
+        border-radius:50px;
+        width:40px;
+        height:40px;
+        overflow:hidden;
+        margin-left:-10px;
+    }
+    
+    .filtre1, .filtre2, .filtre3, .filtre4 {
+        display:flex;
+        border-radius:40px;
+        padding:0px 10px; 
+        border:2px solid #F2F2F2;
+        align-items: center;
+    }
+    
+    .info {
+        display:flex;
+        color:#333;
+        font-size:0.7em;
+        margin-top:30px;
+    }
+    
+    .info img {
+        border:1px solid;
+        border-radius:50%;
+        width:8px;
+        height:8px;
+        padding:3px;
+        margin-right:8px;
+        filter: invert(24%) sepia(80%) saturate(3258%) hue-rotate(209deg) brightness(98%) contrast(105%);
+    }
+    
+    article {
+        display:flex;
+        margin:40px 0;
+    }
+    
+    #allResults {
+        border-radius:30px;
+        width:60%;
+        height:800px;
+        background:#F2F2F2;
+        margin:0px 30px;
+    }
+    
+    #allResults .title {
+        padding:20px 30px;
+        font-weight:bold;
+        font-size:1.3em;
+    }
+    
+    #allResults .bottom {
+        padding: 10px 0 0 50px;
+        font-weight:bold;
+        font-size:1em;
+    }
+    
+    #mostPopular {
+        border-radius:30px;
+        width:30%;
+        height:800px;
+        background:#F2F2F2;
+        margin:0px 30px;
+        flex:1;
+    }
+    
+    #mostPopular .title {
+        display:flex;
+        align-items: center;
+        padding:10px 0;
+        font-weight:bold;
+        font-size:1.3em;
+        width:100%;
+    }
+    
+    #mostPopular .title img {
+        display:flex;
+        width:30px;
+        order:2;
+        padding:0 20px;
+    }
+    
+    #mostPopular .title p {
+        flex-grow:1;
+        order:1;
+        padding:10px 30px;
+    }
+    
+    #cards1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height:600px;
+    }
+    
+    .card1 {
+        display:flex;
+        flex-wrap : wrap;
+        background:#fff;
+        border-radius:20px;
+        box-shadow:#caca 0 0 10px;
+        margin:0 20px 20px 20px;
+        width:28%;
+        height:46%;
+    }
+    
+    .card1 p {
+        display: flex;
+        flex-direction: column;
+        padding-left:20px;
+        font-size:1.2em;
+    }
+    
+    .card1 table {
+        margin:-55px 0 0 5px;
+        filter: invert(24%) sepia(80%) saturate(3258%) hue-rotate(209deg) brightness(98%) contrast(105%);
+    }
+    
+    #cards1 img {
+        display:flex;
+        justify-content: center;
+        border-radius:20px 20px 0 0;
+        width:96%;
+        height:60%;
+        padding: 10px 10px 0 10px;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    #cards2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height:700px;
+    }
+    
+    .card2 img {
+        flex:1;
+    }
+    
+    .card2 p {
+        display: flex;
+        flex-direction: column;
+        padding-left:20px;
+        flex:2;
+        font-size:1.2em;
+    }
+    
+    .card2 {
+        display:flex;
+        background:#fff;
+        border-radius:20px;
+        box-shadow:#caca 0 0 10px;
+        justify-content: center;
+        margin-bottom:50px;
+        width:85%;
+        height:26%;
+    }
+    
+    #cards2 img {
+        display:flex;
+        border-radius:20px 0 0 20px;
+        width:40%;
+        height:89%;
+        padding:10px;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    #activites {
+        display:flex;
+        flex-wrap: nowrap;
+        width:100%;
+        height:700px;
+    }
+    
+    .activitesColonne1 .card3 {
+        height:500px;
+    }
+    
+    .activitesColonne2 {
+        height:500px;
+    }
+    
+    .activitesColonne2 .card3 {
+    
+    }
+    
+    .activitesColonne3 .card3 {
+    
+    }
+    
+    .card3 {
+        display:flex;
+        justify-content:center;
+        box-shadow:#caca 0 0 10px;
+        border-radius: 20px;
+        margin: 0 30px 30px 30px;
+        padding-bottom: 30px;
+    }
+    
+    .card3 img {
+        display:flex;
+        border-radius: 20px 20px 0 0;
+        padding-bottom: 10px;
+        object-fit: cover;
+        width:100%;
+    }
+    
+    footer {
+        display:flex;
+        width:100%;
+        height:200px;
+        background:#F2F2F2;
+        margin-bottom:0px;
+        font-size:0.9em;
+    }
+    
+    #footer {
+        display:flex;
+        justify-content: space-between;
+        width:80%;
+        margin:auto 80px;
+    }
+    
+    #footer p {
+        line-height:150%;
+    }
+    
+    .titreFooter {
+        font-weight:bold;
+        line-height:300%;
+    }
+    
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1200px) {
+
 }
