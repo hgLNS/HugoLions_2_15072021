@@ -4,8 +4,6 @@ html, body{
     font-family:"Raleway";
 }
 
-@media (min-width: 1200px) {
-
 header {
     display:flex;
     width:100%;
@@ -166,7 +164,7 @@ header a:hover {
     filter: invert(24%) sepia(80%) saturate(3258%) hue-rotate(209deg) brightness(98%) contrast(105%);
 }
 
-article {
+.contenu {
     display:flex;
     margin:40px 0;
 }
