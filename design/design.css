@@ -238,12 +238,15 @@ article {
     margin:0 20px 20px 20px;
     width:28%;
     height:46%;
+    padding-bottom:5px;
+}
+
+.card1 h3, .card1 p, .card1 div {
+    padding:0 20px;
+    margin:-5px;
 }
 
 .card1 p {
-    display: flex;
-    flex-direction: column;
-    padding-left:20px;
     font-size:1.2em;
 }
 
@@ -261,6 +264,16 @@ article {
     padding: 10px 10px 0 10px;
     object-fit: cover;
     object-position: center;
+}
+
+
+
+.blue {
+    color:#0065FC;
+}
+
+.gray {
+    color:#dbe7fd;
 }
 
 #cards2 {
@@ -281,6 +294,10 @@ article {
     padding-left:20px;
     flex:2;
     font-size:1.2em;
+}
+
+.card2 p img {
+    width:50px;
 }
 
 .card2 {
@@ -309,39 +326,83 @@ article {
     flex-wrap: nowrap;
     width:100%;
     height:700px;
+    position:relative;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding:30px;
+}
+
+.activitesColonne1 {
+    width:24%;
+    height:100%;
 }
 
 .activitesColonne1 .card3 {
-    height:500px;
+    height:100%;
 }
 
-.activitesColonne2 {
-    height:500px;
+.activitesColonne2, .activitesColonne3 {
+    display:flex;
+    width:24%;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100%;
 }
 
-.activitesColonne2 .card3 {
-
+.activitesColonnes1 img {
+    width:unset;
+    height:100%;
 }
 
-.activitesColonne3 .card3 {
+.activitesColonne2 img, .activitesColonne3 img {
+    min-width:100%;
+    height:unset;
+    width:unset;
+}
 
+.activitesColonne2 .card3, .activitesColonne3 .card3 {
+    height:46%;
+}
+
+.activitesColonne2 .card3:nth-child(1) {
+    height:53%;
+}
+
+.activitesColonne2 .card3:nth-child(2) {
+    height:38%;
 }
 
 .card3 {
     display:flex;
     justify-content:center;
+    position:relative;
     box-shadow:#caca 0 0 10px;
     border-radius: 20px;
-    margin: 0 30px 30px 30px;
-    padding-bottom: 30px;
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+    overflow:hidden;
+    z-index:1;
+
 }
 
 .card3 img {
     display:flex;
+    position:relative;
     border-radius: 20px 20px 0 0;
-    padding-bottom: 10px;
     object-fit: cover;
-    width:100%;
+    object-position: center;
+}
+
+.card3 h5 {
+    position:absolute;
+    z-index:2;
+    bottom:0;
+    background:#fff;
+    margin:0;
+    left:0;
+    right:0;
+    padding:1.5em;
 }
 
 footer {
