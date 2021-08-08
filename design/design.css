@@ -148,6 +148,7 @@ header a:hover {
     padding:0px 10px; 
     border:2px solid #F2F2F2;
     align-items: center;
+    margin-bottom:10px;
 }
 
 .info {
@@ -177,13 +178,14 @@ header a:hover {
 
 .contenu {
     display:flex;
+    align-items: stretch;
     margin:30px 0;
 }
 
 #allResults {
+
     border-radius:30px;
     width:60%;
-    height:800px;
     background:#F2F2F2;
     margin:0px 30px;
 }
@@ -203,45 +205,49 @@ header a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height:600px;
 }
 
 .card1 {
-    display:flex;
-    flex-wrap : wrap;
     background:#fff;
     border-radius:20px;
     box-shadow:#caca 0 0 10px;
     margin:0 20px 20px 20px;
     width:28%;
-    height:46%;
-    padding-bottom:5px;
+    padding: 10px;
 }
 
-.card1 h3, .card1 p, .card1 div {
-    padding:0 20px;
-    margin:-5px;
-}
+.card1 h3 {
+    margin-top:10px;
+} 
 
 .card1 p {
     font-size:1.2em;
+    margin-top:0px;
 }
 
-#cards1 img {
-    display:flex;
-    justify-content: center;
-    border-radius:20px 20px 0 0;
-    width:96%;
-    height:60%;
-    padding: 10px 10px 0 10px;
+.card1 .fas {
+    margin-top:5px;
+}
+
+.imageCard1 {
+    display: inline-block;
+    width:100%;
+    height:150px;
+    border-radius:15px 15px 0 0;
+    overflow: hidden;
+    padding:0!important; 
+    margin:0!important; 
+}
+
+.imageCard1 img {
     object-fit: cover;
-    object-position: center;
+    object-position: bottom;
+    width:100%;
 }
 
 #mostPopular {
     border-radius:30px;
     width:30%;
-    height:800px;
     background:#F2F2F2;
     margin:0px 30px;
     flex:1;
@@ -259,7 +265,6 @@ header a:hover {
     margin: 40px 0 20px 40px;
     font-size:1.5em;
     flex-grow:1;
-
 }
 
 #mostPopular .title .fas {
@@ -293,12 +298,12 @@ header a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height:700px;
 }
 
 .card2 img {
     flex:1;
-    width:40%;
+    width:100%;
+    height:150px;
 }
 
 .card2 p img {
@@ -319,7 +324,7 @@ header a:hover {
 #cards2 img {
     display:flex;
     border-radius:20px 0 0 20px;
-    height:89%;
+    height:150px;
     padding:10px;
     object-fit: cover;
     object-position: center;
@@ -332,8 +337,8 @@ header a:hover {
 #activites {
     display:flex;
     flex-wrap: nowrap;
+    align-items: stretch;
     width:100%;
-    height:700px;
     position:relative;
     justify-content: space-between;
     box-sizing: border-box;
@@ -342,7 +347,7 @@ header a:hover {
 
 .activitesColonne1 {
     width:24%;
-    height:100%;
+    height:600px;
 }
 
 .activitesColonne1 .card3 {
@@ -354,7 +359,7 @@ header a:hover {
     width:24%;
     flex-direction: column;
     justify-content: space-between;
-    height:100%;
+    height:600px;
 }
 
 .activitesColonnes1 img {
@@ -460,7 +465,9 @@ footer {
 
     .menu1, .menu2 {
         display:flex;
+        justify-content: center;
         height:50px;
+        width:50%;
         border-bottom:3px #F2F2F2 solid;
     }
     
@@ -478,6 +485,11 @@ footer {
         color:#fff;
         transition-duration: 1s;
     }
+
+    .menu1:active {
+        border-top:none;
+        border-bottom:3px #0065FC solid;
+    }
     
     .login {
         display:flex;
@@ -490,8 +502,7 @@ footer {
     }
  
     article {
-        display:flex;
-        margin:40px 0;
+        margin:0;
     }
 
     #filtres {
@@ -511,70 +522,85 @@ footer {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        margin-top:-20px;
     }
     
     .contenu {
         display: flex;
         flex-wrap: wrap;
+        align-items:initial;
     }
 
     #allResults {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
         order:2;
-        width:60%;
-        height:1200px;
-        margin-top:20px;
+        border-radius:30px;
+        width:100%;
+        background:#F2F2F2;
+        margin:20px 30px;
     }
     
     #allResults h2{
         margin:40px 40px;
-        font-size:0.8em;
+        font-size:1.em;
+    }
+    
+    #allResults .bottom {
+        padding: 10px 0 0 50px;
+        font-weight:bold;
+        font-size:1em;
     }
     
     #cards1 {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        height:600px;
+        justify-content: center;
     }
     
     .card1 {
-        display:flex;
-        flex-wrap : wrap;
         background:#fff;
         border-radius:20px;
         box-shadow:#caca 0 0 10px;
         margin:0 20px 20px 20px;
-        width:28%;
-        height:46%;
-        padding-bottom:5px;
+        width:100%;
+        padding: 10px;
     }
     
-    .card1 h3, .card1 p, .card1 div {
-        padding:0 20px;
-        margin:-5px;
-    }
+    .card1 h3 {
+        margin-top:10px;
+    } 
     
     .card1 p {
         font-size:1.2em;
+        margin-top:0px;
     }
     
-    #cards1 img {
-        display:flex;
-        justify-content: center;
-        border-radius:20px 20px 0 0;
-        width:96%;
-        height:60%;
-        padding: 10px 10px 0 10px;
+    .card1 .fas {
+        margin-top:5px;
+    }
+    
+    .imageCard1 {
+        display: inline-block;
+        width:100%;
+        height:150px;
+        border-radius:15px 15px 0 0;
+        overflow: hidden;
+        padding:0!important; 
+        margin:0!important; 
+    }
+    
+    .imageCard1 img {
         object-fit: cover;
-        object-position: center;
+        object-position: bottom;
+        width:100%;
     }
     
     #mostPopular {
         order:1;
-        height:850px;
+        border-radius:30px;
+        width:30%;
+        background:#F2F2F2;
+        margin:0px 30px;
+        flex:1;
     }
     
     #mostPopular .title {
@@ -585,8 +611,15 @@ footer {
     }
     
     #mostPopular h2 {
-        margin: 40px 0 20px 40px;
+        display:flex;
+        margin: 20px 0 20px 40px;
         font-size:1.5em;
+        flex-grow:1;
+    }
+    
+    #mostPopular .title .fas {
+        padding:10px 20px 0 0;
+        font-size:1em;
     }
     
     #mostPopular .title p {
@@ -598,33 +631,30 @@ footer {
         display:flex;
         flex-direction: column;
         width:60%;
-        margin-top:10px;
-    }
-
-    .detailsPopular h3 {
-        font-size: 1em;
+        margin:0;
     }
     
     .detailsPopular p {
         margin-top:-10px;
-        font-size:0.7em;
+        font-size:0.8em;
     }
     
     .detailsPopular .fas {
         margin:0;
-        font-size: 0.8em;
     }
     
     #cards2 {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: space-around;
-        height:700px;
+        padding:10px;
     }
     
     .card2 img {
         flex:1;
-        width:40%;
+        width:100%;
+        height:150px;
     }
     
     .card2 p img {
@@ -637,20 +667,19 @@ footer {
         border-radius:20px;
         box-shadow:#caca 0 0 10px;
         justify-content: center;
-        margin-bottom:20px;
-        width:85%;
-        height:20%;
+        margin-bottom:50px;
+        width:100%;
     }
     
     #cards2 img {
         display:flex;
         border-radius:20px 0 0 20px;
-        height:89%;
+        height:150px;
         padding:10px;
         object-fit: cover;
         object-position: center;
     }
-    
+
     .titreActivites {
         margin: 10px 30px;
     }
@@ -658,9 +687,8 @@ footer {
     #activites {
         order:3;
         display:flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         width:100%;
-        height:700px;
         position:relative;
         justify-content: space-between;
         box-sizing: border-box;
@@ -668,20 +696,20 @@ footer {
     }
     
     .activitesColonne1 {
-        width:24%;
-        height:100%;
+        width:100%;
+        height:inherit;
     }
     
     .activitesColonne1 .card3 {
-        height:100%;
+        height:300px;
     }
     
     .activitesColonne2, .activitesColonne3 {
         display:flex;
-        width:24%;
+        width:100%;
         flex-direction: column;
         justify-content: space-between;
-        height:100%;
+        height:inherit;
     }
     
     .activitesColonnes1 img {
@@ -696,15 +724,15 @@ footer {
     }
     
     .activitesColonne2 .card3, .activitesColonne3 .card3 {
-        height:46%;
+        height:300px;
     }
     
     .activitesColonne2 .card3:nth-child(1) {
-        height:53%;
+        height:300px;
     }
     
     .activitesColonne2 .card3:nth-child(2) {
-        height:38%;
+        height:300px;
     }
     
     .card3 {
@@ -714,11 +742,11 @@ footer {
         box-shadow:#caca 0 0 10px;
         border-radius: 20px;
         width:100%;
-        height:100%;
+        height:300px;
         box-sizing: border-box;
         overflow:hidden;
         z-index:1;
-    
+        margin-bottom:20px;
     }
     
     .card3 img {
@@ -747,6 +775,7 @@ footer {
     #footer {
         display:flex;
         flex-wrap: wrap;
+        flex-direction: column;
     }
 }
 
