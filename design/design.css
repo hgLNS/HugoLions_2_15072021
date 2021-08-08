@@ -519,26 +519,24 @@ footer {
     }
 
     #allResults {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         order:2;
         width:60%;
-        height:800px;
+        height:1200px;
+        margin-top:20px;
     }
     
     #allResults h2{
         margin:40px 40px;
-        font-size:1.em;
-    }
-    
-    #allResults .bottom {
-        padding: 10px 0 0 50px;
-        font-weight:bold;
-        font-size:1em;
+        font-size:0.8em;
     }
     
     #cards1 {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
         height:600px;
     }
     
@@ -576,7 +574,7 @@ footer {
     
     #mostPopular {
         order:1;
-        height:900px;
+        height:850px;
     }
     
     #mostPopular .title {
@@ -591,9 +589,6 @@ footer {
         font-size:1.5em;
     }
     
-    #mostPopular .title .fas {
-    }
-    
     #mostPopular .title p {
         flex-grow:1;
         padding:10px 30px;
@@ -605,20 +600,24 @@ footer {
         width:60%;
         margin-top:10px;
     }
+
+    .detailsPopular h3 {
+        font-size: 1em;
+    }
     
     .detailsPopular p {
         margin-top:-10px;
-        font-size:1.2em;
+        font-size:0.7em;
     }
     
     .detailsPopular .fas {
-        margin-top:40px;
+        margin:0;
+        font-size: 0.8em;
     }
     
     #cards2 {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: space-around;
         height:700px;
     }
@@ -638,9 +637,9 @@ footer {
         border-radius:20px;
         box-shadow:#caca 0 0 10px;
         justify-content: center;
-        margin-bottom:50px;
+        margin-bottom:20px;
         width:85%;
-        height:26%;
+        height:20%;
     }
     
     #cards2 img {
