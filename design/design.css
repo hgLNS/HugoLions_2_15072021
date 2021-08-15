@@ -570,12 +570,12 @@ footer {
     } 
     
     .card1 p {
-        font-size:1.2em;
-        margin-top:0px;
+        font-size:1em;
+        margin-top:-10px;
     }
     
     .card1 .fas {
-        margin-top:5px;
+        margin-top:-10px;
     }
     
     .imageCard1 {
