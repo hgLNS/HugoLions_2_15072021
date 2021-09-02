@@ -43,6 +43,7 @@ header a:hover {
 
 .menu1:hover, .menu2:hover, .active {
     border-top:3px #0065FC solid;
+    color:#74a4fd;
 }
 
 .menu3:hover {
@@ -476,6 +477,11 @@ footer {
         height:50px;
         width:50%;
         border-bottom:3px #F2F2F2 solid;
+        border-top:none;
+    }
+
+    .active {
+        border-top:none;
     }
     
     .menu3 {
@@ -573,16 +579,16 @@ footer {
     }
     
     .card1 h3 {
-        margin-top:10px;
+        margin:0;
     } 
     
     .card1 p {
         font-size:1em;
-        margin:10px 0 0 0;
+        margin:0;
     }
     
     .card1 .fas {
-        margin-top:-10px;
+        margin:10px 0 0 0;
     }
     
     .imageCard1 {
@@ -626,7 +632,7 @@ footer {
     
     #mostPopular .title .fas {
         padding:10px 20px 0 0;
-        font-size:1em;
+        font-size:1.8em;
     }
     
     #mostPopular .title p {
@@ -642,7 +648,7 @@ footer {
     }
     
     .detailsPopular p {
-        margin-top:-10px;
+        margin:10px 0 0 0;
         font-size:0.8em;
     }
     
@@ -657,17 +663,13 @@ footer {
         justify-content: space-around;
         padding:10px;
     }
-    
+
     .card2 img {
         flex:1;
         width:100%;
         height:150px;
     }
-    
-    .card2 p img {
-        width:50px;
-    }
-    
+ 
     .card2 {
         display:flex;
         background:#fff;
