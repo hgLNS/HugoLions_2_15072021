@@ -68,16 +68,17 @@ header a:hover {
 }
 
 #recherche {
-    margin:50px 0 0 30px;
+    margin:50px 30px 0 30px;
 }
 
 #recherche h1{
     font-size:1.3em;
+    margin-bottom:5px;
 }
 
 #recherche h5 {
     font-weight:normal;
-    margin-top:-10px;
+    margin-top:0;
 }
 
 #formulaire {
@@ -199,9 +200,9 @@ header a:hover {
     margin:0px 30px;
 }
 
-#allResults h2{
+#allResults h2 {
     margin:40px 40px;
-    font-size:1.em;
+    font-size:1em;
 }
 
 #allResults .bottom {
@@ -251,7 +252,7 @@ header a:hover {
     object-fit: cover;
     object-position: bottom;
     width:100%;
-    min-height:100%;
+    height:200px;
 }
 
 #mostPopular {
@@ -372,6 +373,10 @@ header a:hover {
     height:600px;
 }
 
+.activitesColonne1, .activitesColonne2, .activitesColonne3 {
+    margin-bottom:50px;
+}
+
 .activitesColonnes1 img {
     width:unset;
     height:100%;
@@ -475,7 +480,7 @@ h6 {
 @media (min-width: 768px ) and (max-width: 1024px)  {
     
     #filtres {
-        width:100%;
+        width:90%;
     }
 
     .contenu {
@@ -542,6 +547,14 @@ h6 {
         align-items: center;
         justify-content: space-around;
         padding:10px;
+    }
+
+    #activites {
+        flex-wrap: wrap;
+    }
+
+    .activitesColonne1, .activitesColonne2, .activitesColonne3 {
+        width:46%;
     }
 }
 
@@ -648,7 +661,7 @@ h6 {
     
     #allResults h2{
         margin:40px 40px;
-        font-size:1.em;
+        font-size:1em;
     }
     
     #allResults .bottom {
@@ -884,7 +897,5 @@ h6 {
     #footer div {
         padding:35px 0;
     }
-
-
 }
 
