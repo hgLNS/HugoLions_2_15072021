@@ -26,7 +26,7 @@ header a {
     align-items:center;
     text-decoration:none;
     padding: 0 15px;
-    color:#333333;
+    color:#444444;
 }
 
 header a:hover {
@@ -81,6 +81,10 @@ header a:hover {
     margin-top:0;
 }
 
+.loupe {
+    display:none;
+}
+
 #formulaire {
     display:flex;
     width:300px;
@@ -130,6 +134,19 @@ header a:hover {
     margin-top:40px;
     padding-right:50px;
     font-size:0.9em;
+}
+
+.filtre1 .fas, .filtre2 .fas, .filtre3 .fas, .filtre4 .fas {
+    transition-duration:1s;
+    transition-delay:0;
+}
+
+.filtre1:hover .fas, .filtre2:hover .fas, .filtre3:hover .fas, .filtre4:hover .fas {
+    transform:rotate(360deg);
+}
+
+.filtre1:hover p, .filtre2:hover p, .filtre3:hover p, .filtre4:hover p {
+    color:#444;
 }
 
 #filtres p {
@@ -620,6 +637,14 @@ h6 {
     #recherche h1{
         margin-top:50px;
     }
+
+    .loupe {
+        display:initial;
+    }
+
+    .search {
+        display:none;
+    }
  
     article {
         margin:0;
@@ -655,7 +680,7 @@ h6 {
         order:2;
         border-radius:30px;
         width:100%;
-        background:#F2F2F2;
+        background:transparent;
         margin:20px 30px;
     }
     
@@ -710,15 +735,15 @@ h6 {
     
     .imageCard1 img {
         object-fit: cover;
-        object-position: bottom;
+        object-position: center;
         width:100%;
     }
     
     #mostPopular {
         order:1;
-        border-radius:30px;
         width:30%;
         background:#F2F2F2;
+        border-radius: unset;
         margin:0px 30px;
         flex:1;
     }
@@ -811,6 +836,10 @@ h6 {
         padding:30px;
     }
     
+    .activitesColonne1, .activitesColonne2, .activitesColonne3 {
+        margin-bottom:0;
+    }
+
     .activitesColonne1 {
         width:100%;
         height:inherit;
