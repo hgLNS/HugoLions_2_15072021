@@ -219,7 +219,7 @@ header a:hover {
 
 #allResults h2 {
     margin:40px 40px;
-    font-size:1em;
+    font-size:1.5em;
 }
 
 #allResults .bottom {
@@ -360,6 +360,7 @@ header a:hover {
 
 .titreActivites {
     margin: 10px 30px;
+    font-size: 1.5em;
 }
 
 #activites {
@@ -685,12 +686,12 @@ h6 {
     }
     
     #allResults h2{
-        margin:40px 40px;
-        font-size:1em;
+        margin:40px 10px;
+        font-size:1.5em;
     }
     
     #allResults .bottom {
-        padding: 10px 0 0 50px;
+        padding: 0 0 0 20px;
         font-weight:bold;
         font-size:1em;
     }
