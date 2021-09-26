@@ -358,7 +358,7 @@ header a:hover {
     object-position: center;
 }
 
-.titreActivites {
+#titreActivites {
     margin: 10px 30px;
     font-size: 1.5em;
 }
@@ -822,7 +822,7 @@ h6 {
         object-position: center;
     }
 
-    .titreActivites {
+    #titreActivites {
         margin: 10px 30px;
     }
     
